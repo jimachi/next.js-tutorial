@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import Layout from '../../components/layout';
+
 export default function FirstPost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
       </Head>
@@ -21,12 +23,13 @@ export default function FirstPost() {
         alt="your name"
       />
 
-    <style jsx>{`
-      h1 {
-        color: red;
-      }
-    `}
-    </style>
-    </>
-  )
+      <style jsx>
+        {`
+          h1 {
+            color: red;
+          }
+        `}
+      </style>
+    </Layout>
+  );
 }
